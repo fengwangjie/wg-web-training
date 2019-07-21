@@ -67,7 +67,7 @@ export const lineChartDefaultOptions = {
         bottom: "0",
         containLabel: true
     },
-    legend: {show: false},
+    legend: {show: true},
     xAxis: {
         type: "category",
         boundaryGap: false,
@@ -294,6 +294,7 @@ const getSummaryCount = (summaryItems, metric, deviceType = null) => {
 };
 
 const parsePageViewData = (dateDimension, detailData, summaryData) => {
+    console.log({dateDimension, detailData, summaryData})
     let flattenCurrentDetailData = flattenToObjs(detailData, 0);
 
     let flattenHistorySummaryData = flattenToObjs(summaryData, 0);

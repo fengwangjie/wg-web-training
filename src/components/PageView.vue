@@ -1,12 +1,10 @@
 <template>
     <ECharts :options="defaultOptions" ref="chart"></ECharts>
 </template>
-
 <script>
     import ECharts from "vue-echarts";
     import "echarts";
     import {getPageViewData, lineChartDefaultOptions} from "./pageViewUtils";
-
     export default {
         name: "PageView",
         components: {ECharts},
