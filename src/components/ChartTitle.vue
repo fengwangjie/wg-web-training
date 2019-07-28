@@ -42,7 +42,7 @@ export default {
   -ms-flex-align: center;
   align-items: center;
   .title {
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     margin-right: 1.2rem;
     color: #333;
   }

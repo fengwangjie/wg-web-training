@@ -6,7 +6,7 @@
           <template slot="tab">
             <ChartTile :title="item.metricName" :fluctuate="item.fluctuate" :total="item.total" />
           </template>
-           <WgChart :chartData="item.options" />
+          <WgChart :chartData="item.options" />
         </a-tab-pane>
       </a-tabs>
     </a-card>
@@ -37,37 +37,41 @@ export default {
       console.log(error);
     },
     onFetchDataSuccess: function(chartsData) {
-      console.log(chartsData);
-      this.chartsData = chartsData;
+      let datas = [...chartsData];
+      this.chartsData = datas;
     }
   }
 };
 </script>
 <style lang="scss" scoped>
-body {
-  font-size: 12px;
+/Deep/ .ant-tabs-nav {
+  background-color: #f4f4f4;
+  width: 100%;
+  display: flex;
 }
 
-/Deep/ .ant-tabs-nav {
+/Deep/ .ant-tabs-nav > div:nth-child(1) {
   width: 100%;
-  background-color: #f4f4f4;
-  .ant-tabs-tab {
-    width: 33%;
+  display: flex;
+}
+
+/Deep/ .ant-tabs-tab {
+    flex: 1;
     color: #737373;
-    padding: 2.1rem 2.4rem;
+    padding: 1.2rem 1.2rem;
     margin: 0;
     min-width: 10rem;
     line-height: 1;
   }
-}
+  
 /Deep/ .ant-card-wider-padding .ant-card-body {
   padding: 2px 2px;
 }
 /Deep/ .ant-tabs-nav .ant-tabs-tab-active {
-    background-color: #fff;
+  background-color: #fff;
 }
 /Deep/ .ant-tabs-ink-bar {
-       background-color: #fff;
+  background-color: #fff;
 }
 </style>
 
