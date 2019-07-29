@@ -12,26 +12,12 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ],
-            },
-            {
-                test: /\.scss$/,
+                test: /\.(css|scss|sass)$/,
                 use: [
                     'style-loader',
                     'css-loader',
-                    'sass-loader'
-                ],
-            },
-            {
-                test: /\.sass$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader?indentedSyntax'
+                    'postcss-loader',
+                    'sass-loader',
                 ],
             },
             {
@@ -75,7 +61,7 @@ module.exports = {
         hints: false
     },
     devtool: '#eval-source-map'
-}
+};
 
 module.exports.plugins = [new VueLoaderPlugin()];
 
