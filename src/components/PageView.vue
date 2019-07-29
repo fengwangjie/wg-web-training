@@ -101,7 +101,7 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            padding: 0 2rem 2rem 1rem;
+            padding-bottom: 2rem;
 
             .tabs {
                 display: flex;
@@ -115,6 +115,7 @@
             .chart-container {
                 position: relative;
                 flex: 1;
+                padding: 0 2rem 0 1rem;
 
                 .echarts {
                     width: 100%;
