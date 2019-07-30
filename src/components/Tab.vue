@@ -46,6 +46,10 @@
             border-top: 2px solid #00bbbd;
             background: #fff;
             cursor: default;
+
+            .title {
+                color: #333;
+            }
         }
 
         .top {
@@ -55,7 +59,7 @@
 
             .title {
                 ont-size: 1.4rem;
-                color: #333333;
+                color: #737373;
                 margin-right: 1.2rem;
             }
 
