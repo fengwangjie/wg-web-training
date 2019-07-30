@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import PageView from "../components/PageView"
-import FirstCourse from '../components/FirstCourse'
+import Navigation from "../components/Navigation"
+import PageView from '../components/PageView'
 
 Vue.use(Router);
 
@@ -9,13 +9,13 @@ export default new Router({
     routes: [
         {
             path: '/',
-            name: 'PageView',
-            component: PageView
+            name: 'Navigation',
+            component: Navigation
         },
         {
-            path: '/firstCourse',
-            name: 'FirstCourse',
-            component: FirstCourse
+            path: '/page-view',
+            name: 'PageView',
+            component: PageView
         }
     ]
 })

@@ -1,8 +1,7 @@
 <template>
     <div class="navigation">
-        <img src="../assets/logo.png"/>
-        <h1>front end training</h1>
-        <router-link to="/firstCourse">first course</router-link>
+        <h1>Wisdom Garden Front End Training</h1>
+        <router-link to="/page-view">PageView</router-link>
     </div>
 </template>
 
@@ -18,23 +17,5 @@
         text-align: center;
         color: #2c3e50;
         margin-top: 60px;
-    }
-
-    h1, h2 {
-        font-weight: normal;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    a {
-        color: #42b983;
     }
 </style>
