@@ -106,10 +106,11 @@ export default {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: calc(100% - 11.5rem);
     .main {
       padding: 0 0.875rem 1rem 1.5rem;
       width: 87%;
-      height: calc(100% - 12.5rem);
+      height: calc(100% - 5.85rem);
       margin-bottom: 0.625rem;
       .title {
         display: flex;
@@ -117,7 +118,7 @@ export default {
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        height: 4.3rem;
+        height: 3rem;
         font-size: 12px;
         font-weight: normal;
         font-style: normal;
@@ -134,6 +135,7 @@ export default {
           flex-direction: column;
           .color-group {
             display: flex;
+            margin-bottom: 0.375rem;
             .legend-block:not(:last-child) {
               margin-right: 0.25rem;
             }
@@ -151,9 +153,9 @@ export default {
     }
     .time-label {
       padding: 0 0.875rem 1rem 0.5rem;
-      height: calc(100% - 12.5rem);
+      height: calc(100% - 5.85rem);
       margin-bottom: 1.6rem;
-      margin-top: 4.3rem;
+      margin-top: 3.0rem;
       overflow: hidden;
       width: 12%;
       display: flex;

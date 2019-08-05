@@ -39,22 +39,22 @@ export default {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: space-between;
+    overflow: hidden;
   }
   .week {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: space-between;
-    min-height: 2px;
     display: flex;
     margin-bottom: 0.2%;
     &:not(:last-of-type) {
-      margin-right: 5px;
+      margin-right: 0.5rem;
     }
     .hour {
       width: 100%;
       height: 3%;
-      margin-top: 5px;
+      margin-top: 0.5rem;
     }
   }
 }
