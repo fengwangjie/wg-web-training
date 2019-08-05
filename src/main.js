@@ -1,11 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import { Tabs, Card, Icon } from 'ant-design-vue'
-import 'ant-design-vue/dist/antd.css';
-Vue.use(Tabs)
-Vue.use(Card)
-Vue.use(Icon)
+import moment from 'moment'
+Vue.prototype.$moment = moment;
 new Vue({
     el: '#app',
     router,
